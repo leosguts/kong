@@ -713,7 +713,7 @@ end
 local function check()
   local ok, err = do_thing()
   if not ok then
-    return nil, "could not do thing: " .. err
+    return nil, "couldn't do thing: " .. err
   end
 
   return true
@@ -832,7 +832,7 @@ it makes the code more readable:
 ```lua
 -- bad
 local foo
-if bar then
+if bad then
   foo = "hello"
 
 else
